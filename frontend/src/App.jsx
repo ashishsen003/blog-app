@@ -6,10 +6,12 @@ import SignIn from './pages/SignIn'
 import SignUp from './pages/SignUp'
 import Dashboard from './pages/Dashboard'
 import Projects from './pages/Projects'
+import Headers from './components/Headers'
 
 const App = () => {
   return (
     <BrowserRouter className='text-3xl text-red-400'>
+      <Headers />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
