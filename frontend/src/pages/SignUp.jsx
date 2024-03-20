@@ -8,6 +8,7 @@ const SignUp = () => {
   const [errorMessage, setErrorMessage] = useState(null)
   const [loading, setLoading] = useState(false)
   const navigate = useNavigate()
+
   const handleChange = (e)=>{
     setFormData({...formData, [e.target.id]: e.target.value.trim()})
   }
@@ -39,7 +40,7 @@ const SignUp = () => {
     }
   }
 
-  console.log(formData);
+  // console.log(formData);
 
   return (
     <div className='min-h-screen mt-20'>

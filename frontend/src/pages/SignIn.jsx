@@ -7,9 +7,10 @@ import { signInStart, signInFailure, signInSuccess } from '../Redux/user/userSli
 const SignIn = () => {
 
   const [formData, setFormData] = useState({})
-  const {loading, error: errorMessage} = useSelector(state=>state.user)
+  const {loading, error} = useSelector(state=>state.user)
   const dispatch = useDispatch()
   const navigate = useNavigate()
+
   const handleChange = (e)=>{
     setFormData({...formData, [e.target.id]: e.target.value.trim()})
   }
@@ -87,9 +88,9 @@ const SignIn = () => {
               Sign Up
             </Link>
           </div>
-          {errorMessage && (
+          {error && (
             <Alert className='mt-5' color='failure'>
-              {errorMessage}
+              {error}
             </Alert>
           )}
         </div>
