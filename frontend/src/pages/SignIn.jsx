@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import {Link, useNavigate} from 'react-router-dom'
 import {Alert, Button, Label, Spinner, TextInput} from 'flowbite-react'
 import {useDispatch, useSelector} from 'react-redux'
 import { signInStart, signInFailure, signInSuccess } from '../Redux/user/userSlice'
+import OAuth from '../components/OAuth'
 
 const SignIn = () => {
 
@@ -10,6 +11,10 @@ const SignIn = () => {
   const {loading, error} = useSelector(state=>state.user)
   const dispatch = useDispatch()
   const navigate = useNavigate()
+
+  // useEffect(()=>{
+  //   dispatch(signInSuccess())
+  // },[])
 
   const handleChange = (e)=>{
     setFormData({...formData, [e.target.id]: e.target.value.trim()})
@@ -28,6 +33,7 @@ const SignIn = () => {
         body: JSON.stringify(formData),
       })
       const data = await res.json()
+      console.log(data);
       if(data.success === false){
         dispatch(signInFailure(data.message))
       }
@@ -81,6 +87,7 @@ const SignIn = () => {
                 ) : 'Sign In'
               }
             </Button>
+            <OAuth />
           </form>
           <div className='flex gap-2 text-sm mt-5'>
             <span>Dont Have an account?</span>
