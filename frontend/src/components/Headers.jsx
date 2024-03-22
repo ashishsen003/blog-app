@@ -56,8 +56,8 @@ const Headers = () => {
             <Link  to={'/dashboard?tab=profile'}>
               <Dropdown.Item>Profile</Dropdown.Item>
               <Dropdown.Divider />
-              <Dropdown.Item>Sign out</Dropdown.Item>
             </Link>
+              <Dropdown.Item>Sign out</Dropdown.Item>
           </Dropdown>
         ) : (
           <Link to="/sign-in">
