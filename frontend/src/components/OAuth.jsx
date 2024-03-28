@@ -13,7 +13,7 @@ const OAuth = () => {
 
   const handleGoogleClick = async () => {
     const provider = new GoogleAuthProvider();
-    // provider.setCustomParameters({  promt: 'select_account'})
+    provider.setCustomParameters({  promt: 'select_account'})
     try {
         const resultsFromGoogle = await signInWithPopup(auth, provider)
         const res = await fetch('api/auth/google', {
