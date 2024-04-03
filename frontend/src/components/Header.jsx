@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { toggleTheme } from "../Redux/theme/themeSlice";
 import { signoutSuccess } from "../Redux/user/userSlice";
 
-const Headers = () => {
+const Header = () => {
   const path = useLocation().pathname;
   const dispatch = useDispatch()
   const { currentUser } = useSelector((state) => state.user);
@@ -100,4 +100,4 @@ const Headers = () => {
   );
 };
 
-export default Headers;
+export default Header;

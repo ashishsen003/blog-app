@@ -14,6 +14,8 @@ const Dashboard = () => {
       setTab(tabFromUrl);
     }
   }, [location.search]);
+  console.log(location.search);
+  
 
   return (
     <div className="min-h-screen flex flex-col md:flex-row">
@@ -21,7 +23,7 @@ const Dashboard = () => {
         {/* sidebar */}
         <DashSidebar />
       </div>
-      {/* profile */}
+        {/* profile */}
       {tab === "profile" && <DashProfile />}
     </div>
   );
