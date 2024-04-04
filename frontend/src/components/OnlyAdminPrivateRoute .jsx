@@ -4,7 +4,7 @@ import { Navigate, Outlet } from 'react-router-dom'
 
 const OnlyAdminPrivateRoute = () => {
     const {currentUser} = useSelector((state)=>state.user)
-  return currentUser.isAdmin ? <Outlet /> : <Navigate to='/sign-in' />
+  return  currentUser && currentUser.isAdmin ? <Outlet /> : <Navigate to='/sign-in' />
 }
 
 export default OnlyAdminPrivateRoute
