@@ -15,7 +15,6 @@ const Dashboard = () => {
       setTab(tabFromUrl);
     }
   }, [location.search]);
-  console.log(location.search);
   
 
   return (
