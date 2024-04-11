@@ -73,7 +73,7 @@ export default function UpdatePost() {
           getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
             setImageUploadProgress(null);
             setImageUploadError(null);
-            setFormData({ ...formData, image: downloadURL });
+            setFormData((prevFormData) => ({ ...prevFormData, image: downloadURL }));
           });
         }
       );
@@ -86,7 +86,7 @@ export default function UpdatePost() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch(`/api/post/updatepost/${formData._id}/${currentUser._id}`, {
+      const res = await fetch(`/api/post/updatepost/${postId}/${currentUser._id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -107,6 +107,7 @@ export default function UpdatePost() {
       setPublishError('Something went wrong');
     }
   };
+  console.log(formData);
   return (
     <div className='p-3 max-w-3xl mx-auto min-h-screen'>
       <h1 className='text-center text-3xl my-7 font-semibold'>Update post</h1>
@@ -130,9 +131,9 @@ export default function UpdatePost() {
             value={formData.category}
           >
             <option value='uncategorized'>Select a category</option>
-            <option value='javascript'>JavaScript</option>
-            <option value='reactjs'>React.js</option>
-            <option value='nextjs'>Next.js</option>
+                <option value='science'>Science</option>
+                <option value='history'>History</option>
+                <option value='automobile'>Automobile</option>
           </Select>
         </div>
         <div className='flex gap-4 items-center justify-between border-4 border-teal-500 border-dotted p-3'>
@@ -170,15 +171,15 @@ export default function UpdatePost() {
           />
         )}
         <ReactQuill
-          theme='snow'
-          value={formData.content}
-          placeholder='Write something...'
-          className='h-72 mb-12'
-          required
-          onChange={(value) => {
-            setFormData({ ...formData, content: value });
-          }}
-        />
+            theme='snow'
+            value={formData.content}
+            placeholder='Write something...'
+            className='h-72 mb-12'
+            required
+            onChange={(value) => {
+                setFormData((prevFormData) => ({ ...prevFormData, content: value }));
+            }}
+            />
         <Button type='submit' gradientDuoTone='purpleToPink'>
           Update post
         </Button>

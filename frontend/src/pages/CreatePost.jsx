@@ -1,5 +1,3 @@
-// my code
-
 import { Alert, Button, FileInput, Select, TextInput } from "flowbite-react";
 import React, { useState } from "react";
 import ReactQuill from "react-quill";
@@ -50,7 +48,7 @@ const CreatePost = () => {
           getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
             setImageUploadProgress(null);
             setImageUploadError(null);
-            setFormData({ ...formData, image: downloadURL });
+            setFormData((prevFormData) => ({ ...prevFormData, image: downloadURL }));
           });
         }
       );
@@ -149,7 +147,10 @@ const CreatePost = () => {
           theme="snow"
           placeholder="Write something..."
           className="h-72 mb-12 text-gray-50"
-          onChange={(value) => setFormData({ ...formData, content: value })}
+          required
+          onChange={(value) => {
+              setFormData((prevFormData) => ({ ...prevFormData, content: value }));
+          }}
         />
         <Button type="submit" gradientDuoTone="purpleToPink">
           Publish
