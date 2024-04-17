@@ -25,7 +25,7 @@ const About = () => {
               other readers. We believe that a community of learners can help
               each other grow and improve.
             </p>
-            <p>Made by Ashish by ♥️</p>
+            <p>Made by Ashish with ♥️</p>
           </div>
         </div>
       </div>
