@@ -21,25 +21,10 @@ const DashBoardComp = () => {
       try {
         const res = await fetch("/api/user/getusers?limit=5");
         const data = await res.json();
-        console.log(data);
         if (res.ok) {
           setUsers(data.users);
           setTotalUsers(data.totalUsers);
-          setLastMonthUsers(data.lastMonthUsers);
-        }
-      } catch (error) {
-        console.log(error.message);
-      }
-    };
-    const fetchPosts = async () => {
-      try {
-        const res = await fetch("/api/post/getposts?limit=5");
-        const data = await res.json();
-        console.log(data);
-        if (res.ok) {
-          setPosts(data.posts);
-          setTotalPosts(data.totalPosts);
-          setLastMonthPosts(data.lastMonthPosts);
+          setLastMonthUsers(data.lastMonthAgo);
         }
       } catch (error) {
         console.log(error.message);
@@ -53,6 +38,19 @@ const DashBoardComp = () => {
           setComments(data.comments);
           setTotalComments(data.totalComments);
           setLastMonthComments(data.lastMonthComments);
+        }
+      } catch (error) {
+        console.log(error.message);
+      }
+    };
+    const fetchPosts = async () => {
+      try {
+        const res = await fetch("/api/post/getposts?limit=5");
+        const data = await res.json();
+        if (res.ok) {
+          setPosts(data.posts);
+          setTotalPosts(data.totalPosts);
+          setLastMonthPosts(data.lastMonthPosts);
         }
       } catch (error) {
         console.log(error.message);
