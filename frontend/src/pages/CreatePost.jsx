@@ -127,7 +127,7 @@ const CreatePost = () => {
               <div className="w-16 h-16">
                 <CircularProgressbar
                   value={imageUploadProgress}
-                  text={`${imageUploadProgress} || 0}%`}
+                  text={`${imageUploadProgress}%` || 0}
                 />
               </div>
             ) : (
@@ -146,7 +146,7 @@ const CreatePost = () => {
         <ReactQuill
           theme="snow"
           placeholder="Write something..."
-          className="h-72 mb-12 text-gray-50"
+          className="h-72 mb-12"
           required
           onChange={(value) => {
               setFormData((prevFormData) => ({ ...prevFormData, content: value }));

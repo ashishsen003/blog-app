@@ -136,7 +136,7 @@ export default function UpdatePost() {
                 <option value='automobile'>Automobile</option>
           </Select>
         </div>
-        <div className='flex gap-4 items-center justify-between border-4 border-teal-500 border-dotted p-3'>
+        <div className='flex gap-4 items-center justify-between border-2 border-teal-500 p-3'>
           <FileInput
             type='file'
             accept='image/*'
