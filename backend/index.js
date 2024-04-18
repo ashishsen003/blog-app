@@ -28,7 +28,7 @@ app.use('/api/auth', authRoutes)
 app.use('/api/post', postRoutes)
 app.use('/api/comment', commentRoutes)
 
-app.use(express.static(path.join(__dirname, '/client/dist')))
+app.use(express.static(path.join(__dirname, '/frontend/dist')))
 
 app.get('*', (req, res)=>{
     res.sendFile(path.join(__dirname, 'frontend', 'dist', 'index.html'))
