@@ -13,14 +13,12 @@ live demo: [Website Demo](https://blog-app-64zh.onrender.com)
 *Homepage of the Website*
 ![Screenshot 2024-04-19 205404](https://github.com/ashishsen003/blog-app/assets/112822104/fe66473a-8da9-4c0d-8f19-ef6ce3096238)
 
-
-![Admin Dashboard](/screenshots/admin-dashboard.png)
-![Screenshot 2024-04-19 215303](https://github.com/ashishsen003/blog-app/assets/112822104/75e21535-9d98-493f-860e-e3efbe3eeb5d)
 *Admin Dashboard for managing posts and comments*
+![Screenshot 2024-04-19 215303](https://github.com/ashishsen003/blog-app/assets/112822104/75e21535-9d98-493f-860e-e3efbe3eeb5d)
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/mern-blog-website.git`
+1. Clone the repository: `git clone https://github.com/ashishsen003/blog-app.git`
 2. Navigate to the project directory: `cd mern-blog-website`
 3. Install dependencies: `npm install`
 4. Set up environment variables (details provided in `.env.example`)
