@@ -19,17 +19,17 @@ live demo [Website Demo](https://blog-app-64zh.onrender.com)
 
 1. Clone the repository: `git clone https://github.com/ashishsen003/blog-app.git`
 ### Frontend Setup
-3. Navigate to the frontend folder `cd frontend`
-4. Install dependencies `npm install or yarn install`
-5. Start the frontend Server `npm run dev`
+2. Navigate to the frontend folder `cd frontend`
+3. Install dependencies `npm install or yarn install`
+4. Start the frontend Server `npm run dev`
 ### Backend Setup
-3. Navigate to the backend folder `cd backend`
-4. Install dependencies `npm install or yarn install`
-6. Start the backend Server `npm run dev`
-4. Set up environment variables (details provided in `.env.example`)
-5. Copy the `.env.example` file to a new file named `.env`.
-6. Replace the placeholder values in the `.env` file with your actual environment variables.
-7. Never commit your `.env` file to version control to avoid exposing sensitive information.
+5. Navigate to the backend folder `cd backend`
+6. Install dependencies `npm install or yarn install`
+7. Start the backend Server `npm run dev`
+8. Set up environment variables (details provided in `.env.example`)
+9. Copy the `.env.example` file to a new file named `.env`.
+10. Replace the placeholder values in the `.env` file with your actual environment variables.
+11. Never commit your `.env` file to version control to avoid exposing sensitive information.
 
 
 ## Usage
