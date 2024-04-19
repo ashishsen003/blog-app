@@ -10,14 +10,12 @@ live demo: [Website Demo](https://blog-app-64zh.onrender.com)
 
 ## Screenshots
 
-![Homepage]()
 *Homepage of the Website*
-
 ![Screenshot 2024-04-19 205404](https://github.com/ashishsen003/blog-app/assets/112822104/fe66473a-8da9-4c0d-8f19-ef6ce3096238)
-![Screenshot 2024-04-19 215303](https://github.com/ashishsen003/blog-app/assets/112822104/75e21535-9d98-493f-860e-e3efbe3eeb5d)
 
 
 ![Admin Dashboard](/screenshots/admin-dashboard.png)
+![Screenshot 2024-04-19 215303](https://github.com/ashishsen003/blog-app/assets/112822104/75e21535-9d98-493f-860e-e3efbe3eeb5d)
 *Admin Dashboard for managing posts and comments*
 
 ## Installation
