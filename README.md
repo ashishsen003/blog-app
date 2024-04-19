@@ -21,11 +21,11 @@ live demo [Website Demo](https://blog-app-64zh.onrender.com)
 ### Frontend Setup
 3. Navigate to the frontend folder `cd frontend`
 4. Install dependencies `npm install or yarn install`
-5. Start the Server `npm run dev`
+5. Start the frontend Server `npm run dev`
 ### Backend Setup
 3. Navigate to the backend folder `cd backend`
 4. Install dependencies `npm install or yarn install`
-6. Start the backend server `npm run dev`
+6. Start the backend Server `npm run dev`
 4. Set up environment variables (details provided in `.env.example`)
 
 ## Usage
