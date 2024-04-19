@@ -19,7 +19,11 @@ live demo: [Website Demo](https://blog-app-64zh.onrender.com)
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/ashishsen003/blog-app.git`
-2. Navigate to the project directory: `cd mern-blog-website`
+2. Navigate to the project directory: `cd frontend
+                                       npm install
+                                       # or
+                                       yarn install
+                                       `
 3. Install dependencies: `npm install`
 4. Set up environment variables (details provided in `.env.example`)
 5. Start the development server: `npm start`
