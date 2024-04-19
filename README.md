@@ -6,7 +6,7 @@ features such as creating, deleting, updating, and reading posts and comments. U
 
 ## Demo
 
-live demo deployed on Render: [Website Demo](https://blog-app-64zh.onrender.com)
+live demo: [Website Demo](https://blog-app-64zh.onrender.com)
 
 ## Screenshots
 
