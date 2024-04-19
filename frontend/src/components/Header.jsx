@@ -86,6 +86,7 @@ const Header = () => {
               alt='user'
               img={currentUser.profilePicture}
               rounded
+              // className="border"
               />
             }
           >
