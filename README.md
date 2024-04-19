@@ -5,7 +5,7 @@ It features a blog where users can read posts, comment on them, and like comment
 features such as creating, deleting, updating, and reading posts and comments. Users can upload their profile picture, and Firebase is used to store these images.
 
 ## Demo
-live demo: [Website Demo](https://blog-app-64zh.onrender.com)
+live demo [Website Demo](https://blog-app-64zh.onrender.com)
 
 ## Screenshots
 
@@ -18,7 +18,7 @@ live demo: [Website Demo](https://blog-app-64zh.onrender.com)
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/ashishsen003/blog-app.git`
-### Frontend Setup:
+### Frontend Setup
 3. Navigate to the frontend folder: `cd frontend`
 4. Install dependencies: `npm install or yarn install`
 5. Start the frontend server: `npm run dev`
