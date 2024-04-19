@@ -136,7 +136,7 @@ const DashBoardComp = () => {
                         <Table.Body key={user._id} className='divide-y'>
                             <Table.Row className='bg-white dark:border-gray-700 dark:bg-gray-800'>
                                 <Table.Cell>
-                                    <img src={user.profilePicture} alt="user" className="w-10 h-10 rounded-full bg-gray-500 " />
+                                    <img src={user.profilePicture} alt="user" className="w-10 h-10 object-cover rounded-full bg-gray-500 " />
                                 </Table.Cell>
                                 <Table.Cell>
                                     {user.username}
@@ -195,7 +195,7 @@ const DashBoardComp = () => {
                         <Table.Body key={post._id} className='divide-y'>
                             <Table.Row className='bg-white dark:border-gray-700 dark:bg-gray-800'>
                                 <Table.Cell>
-                                    <img src={post.image} alt="post image" className="w-10 h-10 rounded-md bg-gray-500 " />
+                                    <img src={post.image} alt="post image" className="w-12 object-cover h-10 rounded-md bg-gray-500 " />
                                 </Table.Cell>
                                 <Table.Cell className="w-96">
                                     {post.title}
