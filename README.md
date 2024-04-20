@@ -27,7 +27,7 @@ live demo [Website Demo](https://blog-app-64zh.onrender.com)
 6. Navigate to the backend folder `cd backend`
 7. Install dependencies `npm install or yarn install`
 8. Start the backend Server `npm run dev`
-9. 5. This will run backend server on `PORT: 3000`
+9. This will run backend server on `PORT: 3000`
 10. Set up environment variables (details provided in `.env.example`)
    - Copy the `.env.example` file to a new file named `.env`.
    - Replace the placeholder values in the `.env` file with your actual environment variables.
