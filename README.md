@@ -28,10 +28,7 @@ live demo [Website Demo](https://blog-app-64zh.onrender.com)
 7. Install dependencies `npm install or yarn install`
 8. Start the backend Server `npm run dev`
 9. This will run backend server on `PORT: 3000`
-10. Set up environment variables (details provided in `.env.example`)
-- Copy the `.env.example` file to a new file named `.env`.
-- Replace the placeholder values in the `.env` file with your actual environment variables.
-- Never commit your `.env` file to version control to avoid exposing sensitive information.
+
 
 
 ## Usage
@@ -44,7 +41,7 @@ live demo [Website Demo](https://blog-app-64zh.onrender.com)
 6. Access the admin dashboard by logging in with the following credentials:
    - **Email:** admin@gmail.com
    - **Password:** admin@blog
-7. In admin dashboard you can create a new post and can see all the users, posts and comments 
+7. In admin dashboard you can create a new post and can see all the users, posts and comments.
 
 ## Technologies Used
 
@@ -59,7 +56,7 @@ live demo [Website Demo](https://blog-app-64zh.onrender.com)
 ## Features
 
 - User authentication (sign up, login) with Google OAuth
-- Profile picture upload.
+- Profile picture upload
 - Dark mode and light mode themes
 - Reading, commenting, and liking comments
 - Admin dashboard for managing posts and comments
@@ -70,6 +67,9 @@ live demo [Website Demo](https://blog-app-64zh.onrender.com)
   - `VITE_FIREBASE_API_KEY` = 'your-firebase-api-key'
   - `MONGO` = 'your-mongodb-uri'
   - `JWT_SECRET` = 'your-jwt-secret'
+- Copy the `.env.example` file to a new file named `.env`.
+- Replace the placeholder values in the `.env` file with your actual environment variables.
+- Never commit your `.env` file to version control to avoid exposing sensitive information.
 
 ## Contributing
 
