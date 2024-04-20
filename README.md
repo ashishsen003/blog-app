@@ -27,68 +27,48 @@ live demo [Website Demo](https://blog-app-64zh.onrender.com)
 6. Install dependencies `npm install or yarn install`
 7. Start the backend Server `npm run dev`
 8. Set up environment variables (details provided in `.env.example`)
-9. Copy the `.env.example` file to a new file named `.env`.
-10. Replace the placeholder values in the `.env` file with your actual environment variables.
-11. Never commit your `.env` file to version control to avoid exposing sensitive information.
+   - Copy the `.env.example` file to a new file named `.env`.
+   - Replace the placeholder values in the `.env` file with your actual environment variables.
+   - Never commit your `.env` file to version control to avoid exposing sensitive information.
 
 
 ## Usage
 
 1. Visit the website and browse through the posts.
 2. Sign up with your Google account or create a new account.
-3. Explore the dark mode and light mode themes.
-4. Leave comments on posts and like other user's comments.
-5. Access the admin dashboard by logging in with the following credentials:
+3. You can upload and change your profile picture.
+4. Explore the dark mode and light mode themes.
+5. Leave comments on posts and like other user's comments.
+6. Access the admin dashboard by logging in with the following credentials:
    - **Email:** admin@gmail.com
    - **Password:** admin@blog
-
-## Image Upload with Firebase
-
-User profile pictures are uploaded to Google Firebase. After uploading an image, you will receive a link to the uploaded image, which you can then use to set the profile picture for the user in the MongoDB database.
+7. In admin dashboard you can create a new post and can see all the users, posts and comments 
 
 ## Technologies Used
 
-- MongoDB
-- Express.js
 - React
 - Node.js
-- Google OAuth for authentication
-- Google Firebase for image upload
+- Express.js
+- MongoDB
+- Tailwind CSS
+- Flowbite react
+- Google firebase
 
 ## Features
 
 - User authentication (sign up, login) with Google OAuth
-- Profile picture upload for users using Firebase
+- Profile picture upload.
 - Dark mode and light mode themes
-- Reading, commenting, and liking posts
+- Reading, commenting, and liking comments
 - Admin dashboard for managing posts and comments
 
 ## Configuration
 
 - Set up environment variables as specified in `.env.example`:
-  - `MONGO_URI`: MongoDB connection URI
-  - `GOOGLE_CLIENT_ID`: Google OAuth client ID
-  - `GOOGLE_CLIENT_SECRET`: Google OAuth client secret
-  - `JWT_SECRET`: Secret key for JWT authentication
-  - `REACT_APP_API_URL`: API URL for the React frontend
+  - `VITE_FIREBASE_API_KEY` = 'your-firebase-api-key'
+  - `MONGO` = 'your-mongodb-uri'
+  - `JWT_SECRET` = 'your-jwt-secret'
 
 ## Contributing
 
 Contributions are welcome! Feel free to submit bug reports, feature requests, or pull requests.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Credits
-
-- [MongoDB](https://www.mongodb.com/)
-- [Express.js](https://expressjs.com/)
-- [React](https://reactjs.org/)
-- [Node.js](https://nodejs.org/)
-- [Google OAuth](https://developers.google.com/identity/protocols/oauth2)
-- [Google Firebase](https://firebase.google.com/)
-
-## Contact
-
-For questions or feedback, contact the project maintainer: [Your Name](mailto:your-email@example.com)
