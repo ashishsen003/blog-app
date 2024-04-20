@@ -74,6 +74,7 @@ const DashPosts = () => {
         <>
           <Table hoverable className="shadow-md">
             <Table.Head>
+              <Table.HeadCell>Date created</Table.HeadCell>
               <Table.HeadCell>Date updated</Table.HeadCell>
               <Table.HeadCell>Post image</Table.HeadCell>
               <Table.HeadCell>Post title</Table.HeadCell>
@@ -86,6 +87,9 @@ const DashPosts = () => {
             {userPosts.map((post) => (
               <Table.Body className="divide-y" key={post._id}>
                 <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800" >
+                  <Table.Cell>
+                    {new Date(post.createdAt).toLocaleDateString()}
+                  </Table.Cell>
                   <Table.Cell>
                     {new Date(post.updatedAt).toLocaleDateString()}
                   </Table.Cell>
