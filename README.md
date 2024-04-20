@@ -44,35 +44,29 @@ live demo [Website Demo](https://blog-app-64zh.onrender.com)
    - **Password:** admin@blog
 7. In admin dashboard you can create a new post and can see all the users, posts and comments 
 
-## Image Upload with Firebase
-
-User profile pictures are uploaded to Google Firebase. After uploading an image, you will receive a link to the uploaded image, which you can then use to set the profile picture for the user in the MongoDB database.
-
 ## Technologies Used
 
 - MongoDB
 - Express.js
 - React
 - Node.js
-- Google OAuth for authentication
-- Google Firebase for image upload
+- tailwind CSS
+- flowbite-react
 
 ## Features
 
 - User authentication (sign up, login) with Google OAuth
-- Profile picture upload for users using Firebase
+- Profile picture upload.
 - Dark mode and light mode themes
-- Reading, commenting, and liking posts
+- Reading, commenting, and liking comments
 - Admin dashboard for managing posts and comments
 
 ## Configuration
 
 - Set up environment variables as specified in `.env.example`:
-  - `MONGO_URI`: MongoDB connection URI
-  - `GOOGLE_CLIENT_ID`: Google OAuth client ID
-  - `GOOGLE_CLIENT_SECRET`: Google OAuth client secret
-  - `JWT_SECRET`: Secret key for JWT authentication
-  - `REACT_APP_API_URL`: API URL for the React frontend
+  - `VITE_FIREBASE_API_KEY` = 'your-firebase-api-key'
+  - `MONGO` = 'your-mongodb-uri'
+  - `JWT_SECRET` = 'your-jwt-secret'
 
 ## Contributing
 
