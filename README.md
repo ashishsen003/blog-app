@@ -37,10 +37,10 @@ live demo [Website Demo](https://blog-app-64zh.onrender.com)
 1. Visit the website and browse through the posts.
 2. Sign up with your Google account or create a new account.
 3. Explore the dark mode and light mode themes.
-4. Leave comments on posts and like other users' comments.
+4. Leave comments on posts and like other user's comments.
 5. Access the admin dashboard by logging in with the following credentials:
-   - **Email:** admin@example.com
-   - **Password:** adminpassword123
+   - **Email:** admin@gmail.com
+   - **Password:** admin@blog
 
 ## Image Upload with Firebase
 
