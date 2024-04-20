@@ -46,12 +46,13 @@ live demo [Website Demo](https://blog-app-64zh.onrender.com)
 
 ## Technologies Used
 
-- MongoDB
-- Express.js
 - React
 - Node.js
-- tailwind CSS
-- flowbite-react
+- Express.js
+- MongoDB
+- Tailwind CSS
+- Flowbite react
+- Google firebase
 
 ## Features
 
@@ -71,20 +72,3 @@ live demo [Website Demo](https://blog-app-64zh.onrender.com)
 ## Contributing
 
 Contributions are welcome! Feel free to submit bug reports, feature requests, or pull requests.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Credits
-
-- [MongoDB](https://www.mongodb.com/)
-- [Express.js](https://expressjs.com/)
-- [React](https://reactjs.org/)
-- [Node.js](https://nodejs.org/)
-- [Google OAuth](https://developers.google.com/identity/protocols/oauth2)
-- [Google Firebase](https://firebase.google.com/)
-
-## Contact
-
-For questions or feedback, contact the project maintainer: [Your Name](mailto:your-email@example.com)
