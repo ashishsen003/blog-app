@@ -31,7 +31,6 @@ live demo [Website Demo](https://blog-app-64zh.onrender.com)
    - Replace the placeholder values in the `.env` file with your actual environment variables.
    - Never commit your `.env` file to version control to avoid exposing sensitive information.
 
-
 ## Usage
 
 1. Visit the website and browse through the posts.
