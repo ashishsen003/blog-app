@@ -19,24 +19,28 @@ live demo [Website Demo](https://blog-app-64zh.onrender.com)
 
 1. Clone the repository: `git clone https://github.com/ashishsen003/blog-app.git`
 ### Frontend Setup
-3. Navigate to the frontend folder `cd frontend`
-4. Install dependencies `npm install or yarn install`
-5. Start the frontend Server `npm run dev`
+2. Navigate to the frontend folder `cd frontend`
+3. Install dependencies `npm install or yarn install`
+4. Start the frontend Server `npm run dev`
 ### Backend Setup
-3. Navigate to the backend folder `cd backend`
-4. Install dependencies `npm install or yarn install`
-6. Start the backend Server `npm run dev`
-4. Set up environment variables (details provided in `.env.example`)
+5. Navigate to the backend folder `cd backend`
+6. Install dependencies `npm install or yarn install`
+7. Start the backend Server `npm run dev`
+8. Set up environment variables (details provided in `.env.example`)
+9. Copy the `.env.example` file to a new file named `.env`.
+10. Replace the placeholder values in the `.env` file with your actual environment variables.
+11. Never commit your `.env` file to version control to avoid exposing sensitive information.
+
 
 ## Usage
 
 1. Visit the website and browse through the posts.
 2. Sign up with your Google account or create a new account.
 3. Explore the dark mode and light mode themes.
-4. Leave comments on posts and like other users' comments.
+4. Leave comments on posts and like other user's comments.
 5. Access the admin dashboard by logging in with the following credentials:
-   - **Email:** admin@example.com
-   - **Password:** adminpassword123
+   - **Email:** admin@gmail.com
+   - **Password:** admin@blog
 
 ## Image Upload with Firebase
 
