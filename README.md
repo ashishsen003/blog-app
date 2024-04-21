@@ -5,8 +5,7 @@ It features a blog where users can read posts, comment on them, and like comment
 features such as creating, deleting, updating, and reading posts and comments. Users can upload their profile picture, and Firebase is used to store these images.
 
 ## Demo
-live demo [Website](https://blog-app-64zh.onrender.com)
-live demo[video](https://www.youtube.com/watch?v=UOEPYxzzwO8)
+live demo [Website](https://blog-app-64zh.onrender.com), [Video](https://www.youtube.com/watch?v=UOEPYxzzwO8)
 
 ## Screenshots
 
